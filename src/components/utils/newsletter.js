@@ -3,6 +3,7 @@ import { Form, Button } from 'react-bootstrap'
 import { useDispatch } from 'react-redux';
 import { addToNewsletter } from '../../store/utils/thunks';
 import { showToast } from './tools';
+import { clearNewsletter } from '../../store/reducers/users';
 
 const  Newsletter = () => {
 
@@ -23,10 +24,12 @@ const  Newsletter = () => {
                 showToast("ERROR", "You are already on the list!!")
                 textInput.current.value = "";
             }
+            dispatch(clearNewsletter())    
         })
 
     }
 
+  
     return (
         <>
             <div className='newsletter_container'>

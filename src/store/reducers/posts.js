@@ -10,6 +10,9 @@ export const postsSlice = createSlice ({
         }
     },
     reducers: {
+        clearPostById: (state, action)=>{
+            state.postById = {}
+        }
 
     },
     extraReducers:(builder)=>{
@@ -38,4 +41,5 @@ export const postsSlice = createSlice ({
     }
 })
 
+export const {clearPostById} = postsSlice.actions
 export default postsSlice.reducer;
