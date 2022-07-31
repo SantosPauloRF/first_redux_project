@@ -219,5 +219,20 @@
       "id": 4
     }
   ],
-  "contact": []
+  "contact": [
+    {
+      "email": "jane@jane.com",
+      "firstname": "Jane",
+      "lastname": "Dude",
+      "message": "Hii.. i am a message from your form! ",
+      "id": 1
+    },
+    {
+      "email": "Jose@juca.com.br",
+      "firstname": "asd",
+      "lastname": "asd",
+      "message": "asd",
+      "id": 2
+    }
+  ]
 }
